@@ -80,7 +80,7 @@
         num (if-let [num-str (second args)]
               (Integer/parseInt num-str)
               7)
-        from-date (if-let [from-str (nth args 3 false)]
+        from-date (if-let [from-str (nth args 2 false)]
                     (input-date from-str)
                     today)
         dates-idxd (indexed-next-dogdays birthday from-date num)]
